@@ -1,5 +1,5 @@
 # Official Elixir docker repo: https://hub.docker.com/r/_/elixir/
-FROM elixir:1.7.2
+FROM elixir:1.7.2-alpine
 
 RUN mkdir -p app
 
