@@ -6,7 +6,7 @@ defmodule ElixirExample do
     # Application.get_env gets :cowboy_port from config/config.exs,
     # from application environment rather than system environment.
     # Get from system environment in config.exs if so desired
-    port = Application.get_env(:elixir_example, :cowboy_port, 8080)
+    port = Application.get_env(:elixir_example, :cowboy_port, 80)
 
     children = [
      {Plug.Adapters.Cowboy2, scheme: :http, plug: ElixirExample.Router, options: [port: port]}
